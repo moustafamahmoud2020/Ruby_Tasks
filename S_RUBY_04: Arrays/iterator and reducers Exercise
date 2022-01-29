@@ -1,0 +1,33 @@
+#a
+a =[1,2,3,4,5]
+
+p a.max
+
+p a.min
+
+p a.count
+
+p a.sum
+
+p a.inject (:*)
+#b
+p a.include? 1.to_i
+#c
+x =[1,1,2,2,3,3,3]
+x2 = x.tally
+y = []
+x2.each {|element| y.push(element)}
+p y
+#d
+sum = 0
+x.each {|element| sum = element + sum}
+p "Sum using iterators: "+sum.to_s
+puts "Sum using reducer: "+(x.reduce(0) { |sum, n| sum + n } ).to_s
+#e
+l =[1,2,3,3,4,5,5,1]
+puts l.uniq
+
+#F
+a1 = [1,2,3,4,5,6,5,6]
+a2 = [x[(x.length/2)-1],x[x.length/2]]
+p a2
