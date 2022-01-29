@@ -1,0 +1,19 @@
+#Remove “Hello” , print the text
+p y = "Hello Ruby World"
+#Add “Welcome to” to the beginning, print the text
+p y.delete("Hello")
+#Replace “World” by your name, print the text
+p y.prepend("Welcome ")
+#Put your name between quotes , print the text
+p y = y.sub("World","Mostafa")
+#Insert a tab after the coma, print the text
+p y = y.sub("Hello","to")
+p y = y.sub("Mostafa","\'Mostafa\'")
+p y = y.insert(15,",")
+#Count the number of characters, print the count
+p y.size
+p y.length
+#Count number of spaces, print the count
+p y.count(" ")
+#Replace the text spaces by “-”
+p y.gsub(" ","-")
