@@ -1,0 +1,42 @@
+#Write a Ruby program to check three given integers (a:smallest,b,c:largest) and returntrue if the three values are equally spaced, so the difference between a     
+a,b,c = 1,2,3
+if b-a==c-b
+    puts true
+else
+     puts false
+ end
+ #B
+ if (b-a<=1 && c-a>=3) || (c-a<=1 && b-a>=3)
+    puts true
+else
+    puts false
+end
+#C
+x= 22
+y= 2
+if (x in 10..99) || (y in 10..99)
+    puts true
+else
+    puts false
+end
+#D
+x= 11
+y= 23
+if (x==11) || (y==11) || (x-y==11) || (y-x==11) || (x+y==11)
+    puts true
+else
+    puts false
+end
+#E
+m = "mostafa"
+n = "mahmoud"
+if m[0] != n[0] && m[-1]!=n[-1] 
+    unless (m.include? "x") || (n.include? "x")
+        puts true
+    else
+        puts false
+    end
+else 
+    puts false
+end
+
